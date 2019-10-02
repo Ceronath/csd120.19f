@@ -1,3 +1,28 @@
 body {
-    background-color: #802F15;
+    background-color: #000813;
+    color: #2D4B74;
+}
+
+h1 {
+    background-color: #000813;
+}
+
+h2 {
+    background-color: #000813;
+}
+
+a {
+    color: #194889;
+}
+
+nav ul li a {
+    color: #A50518
+}
+
+.byline {
+    opacity: 0.5;
+}
+
+#page-copyright {
+    color: #A50518;
 }
