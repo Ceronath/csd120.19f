@@ -20,7 +20,7 @@ nav ul li a {
 }
 
 .byline {
-    opacity: 0.5;
+    color: rgba(0,0,0,0.5);
 }
 
 #page-copyright {
