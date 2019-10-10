@@ -1,28 +1,58 @@
 body {
+    font-family: 'Proza Libre', 'Verdana', 'Arial', sans-serif;
     background-color: #000813;
     color: #2D4B74;
 }
 
 h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Proza Libre', sans-serif;
+    background-image: url(../Images/gradient.png);
+    background-repeat: repeat-x;
     background-color: #000813;
 }
 
 h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Proza Libre', sans-serif;
+    background-image: url(../Images/gradient.png);
+    background-repeat: repeat-x;
     background-color: #000813;
 }
 
 a {
+    text-decoration: none;
     color: #194889;
 }
 
-nav ul li a {
-    color: #A50518
+nav a {
+    color: #A50518;
 }
 
 .byline {
     color: rgba(0,0,0,0.5);
+    font-size: 70%;
 }
 
 #page-copyright {
+    text-transform: uppercase;
     color: #A50518;
+    letter-spacing: 3px;
+}
+
+.bio p {
+    text-indent: 3em;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+ol {
+    list-style-type: disc;
+}
+
+nav ul {
+    list-style-type: none;
 }
