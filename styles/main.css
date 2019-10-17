@@ -49,8 +49,8 @@ footer {
     font-size: 12px;
 }
 
-ol {
-    list-style-type: disc;
+ul {
+    list-style-type: circle;
 }
 
 nav ul {
