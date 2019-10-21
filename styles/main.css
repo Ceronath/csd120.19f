@@ -7,7 +7,6 @@ body {
 h1 {
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Proza Libre', sans-serif;
-    background-image: url(../Images/gradient.png);
     background-repeat: repeat-x;
     background-color: #000813;
 }
@@ -15,7 +14,6 @@ h1 {
 h2 {
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Proza Libre', sans-serif;
-    background-image: url(../Images/gradient.png);
     background-repeat: repeat-x;
     background-color: #000813;
 }
@@ -61,8 +59,8 @@ nav ul {
 }
 
 .width-wrap {
+   max-width: 1024px;
    margin: auto;
-   width: 1024px;
    padding-right: 2em;
    padding-left: 2em;
    margin-bottom: 3em;
