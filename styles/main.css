@@ -117,7 +117,7 @@ footer hr {
     width: 50px;
     background-size: contain; 
     position: absolute;
-    right: 7px;
+    right: -7px;
     top: -10px;
 }
 
@@ -162,7 +162,6 @@ nav a:hover{
 }
 
 .back-to-top a{
-    position: static;
+    position: fixed;
     bottom: 3.5em;
-    right: 3.5em;
 }
