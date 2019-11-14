@@ -8,6 +8,8 @@ body {
     font-family: 'Proza Libre', 'Verdana', 'Arial', sans-serif;
     background-color: #000813;
     color: #403636;
+    min-height: 100vh;
+    display: flex;
 }
 
 h1 {
@@ -58,6 +60,7 @@ footer {
     text-align: center;
     font-size: 12px;
     margin-bottom: 2em;
+    margin-top: auto;
 }
 
 ul {
@@ -68,12 +71,14 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    float: right;
+    display: flex;
+    justify-content: center;
 }
 
 .width-wrap {
    max-width: 1024px;
-   margin: auto;
+   margin-left: auto;
+   margin-right: auto;
    padding-right: 2em;
    padding-left: 2em;
    margin-bottom: 3em;
@@ -81,7 +86,9 @@ nav ul {
    border-right: 1px solid rgba(0, 0, 0, .3);
    border-bottom: 1px solid rgba(0, 0, 0, .3);
    background-color: #4c7d72;
-   box-shadow: 0px 0px 4px rgba(0, 0, 0, .2)
+   box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+   display: flex;
+   flex-direction: column;
 }
 
 figure img {
@@ -132,7 +139,7 @@ footer hr {
 }
 
 nav ul li{
-    float: left;
+    
 }
 
 nav{
@@ -164,4 +171,22 @@ nav a:hover{
 .back-to-top a{
     position: fixed;
     bottom: 3.5em;
+}
+
+main{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+}
+
+.bio{
+    grid-column: 1 / span 2;
+}
+
+.glossary{
+    grid-column: 1 / span 2;
+}
+
+#useful-links{
+    grid-column: 1 / span 2;
 }
