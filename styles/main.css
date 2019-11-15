@@ -190,3 +190,26 @@ main{
 #useful-links{
     grid-column: 1 / span 2;
 }
+
+.gallery{
+    grid-column: span 2;
+    width: 100%;
+}
+
+.gallery-thumbnails{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.gallery-thumbnails a img{
+    width: 100%;
+    display: block;
+}
+
+.row-span-2{
+    grid-row: span 2;
+}
+
+.col-span-2{
+    grid-column: span 2;
+}
