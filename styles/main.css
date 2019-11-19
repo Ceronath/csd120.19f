@@ -213,3 +213,35 @@ main{
 .col-span-2{
     grid-column: span 2;
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        display: none;}
+    .paperclip{
+        display: none;}
+    .mugshot{
+        float: none;
+        margin-right: 0;
+        margin-left: 0;}
+    main{
+        display: block;}
+    .row-span-2, .col-span-2{
+        grid-column: span 1;
+        grid-row: span 1;}
+    nav ul{
+        flex-direction: column;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;}
+    nav ul li a{
+        border: 0;}
+    nav ul li a:hover{
+        border: 0;
+        text-decoration: underline;}
+    
+}
