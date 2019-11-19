@@ -243,5 +243,27 @@ img{
     nav ul li a:hover{
         border: 0;
         text-decoration: underline;}
+    .burger{
+        visibility: visible;
+        width: 40px;
+        height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 5px solid #2832a6;
+        margin-top: 1em;
+        cursor: pointer;
+        position: relative;}
+    .burger, .burger::before, .burger::after{
+        width: 40px;
+        border-top: 5px solid #2832a6;}
+    .burger::before, .burger::after{
+        content: '';
+        display: block;
+        position: absolute;}
+    .burger::before{
+        top: 5px;}
+    .burger::after{
+        top: 15px;}
+    
     
 }
