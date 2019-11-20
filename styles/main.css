@@ -220,7 +220,7 @@ img{
 }
 
 @media screen and (max-width: 768px){
-    footer{
+    footer hr{
         display: none;}
     .paperclip{
         display: none;}
