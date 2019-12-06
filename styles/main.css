@@ -219,6 +219,8 @@ img{
     height: auto;
 }
 
+
+
 @media screen and (max-width: 768px){
     footer hr{
         display: none;}
@@ -239,6 +241,7 @@ img{
         margin-bottom: 1em;
         text-align: center;
         height: 0;
+        transition: height 500ms ease-in-out;
         overflow: hidden;}
     nav ul li a{
         border: 0;}
@@ -269,11 +272,17 @@ img{
         top: 15px;}
     #burger-toggle{
         display: none;}
-    ul~input:checked{
-        height: auto;
+    input:checked~ul{
+        height: 126px;}
+    {
+        transform: translate(-5px, -10px) rotate(45deg);
     }
 
 
+}
+
+#burger-toggle{
+    display: none;
 }
 
 section table{
