@@ -18,14 +18,15 @@
 <body>
     <div class="width-wrap">
             <header id="top">
-                  <nav>
-                    <div class=burger></div>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="links.html">Links</a></li>
-                            <li><a href="glossary.html">Glossary</a></li>
-                        </ul>
-                  </nav>
+                <nav>
+                    <label for='burger-toggle' class=burger></label>
+                    <input type='checkbox' id='burger-toggle'>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="glossary.html">Glossary</a></li>
+                    </ul>
+                </nav>
             </header>
                 <main>
                     <section class="bio">
@@ -169,7 +170,7 @@
                         </div>
                 </section>
                     <section class='survey'> <h2>Survey</h2>
-                        <form>
+                        <form action='https://formspree.io/xjvkaqvw' method='post'>
                             <label for='name'>What is your name?</label>
                             <input type='text' name='name_field' id='name' required>
 
@@ -199,9 +200,7 @@
                             <label><input type='radio' name='radio' value='?' checked>None of your business</label>
 
                             <label>What is the meaning of life?</label>
-                                <textarea name='life_meaning' rows='10'>
-                                    Enter the correct answer here
-                                </textarea>
+                            <textarea name='life_meaning' rows='10'>Enter the correct answer here</textarea>
 
                             <button type='submit' id='send'>Send</button>
 

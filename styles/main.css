@@ -235,9 +235,11 @@ img{
         grid-row: span 1;}
     nav ul{
         flex-direction: column;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        text-align: center;}
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+        height: 0;
+        overflow: hidden;}
     nav ul li a{
         border: 0;}
     nav ul li a:hover{
@@ -252,7 +254,8 @@ img{
         border-top: 5px solid #2832a6;
         margin-top: 1em;
         cursor: pointer;
-        position: relative;}
+        position: relative;
+        display:block;}
     .burger, .burger::before, .burger::after{
         width: 40px;
         border-top: 5px solid #2832a6;}
@@ -264,6 +267,11 @@ img{
         top: 5px;}
     .burger::after{
         top: 15px;}
+    #burger-toggle{
+        display: none;}
+    ul~input:checked{
+        height: auto;
+    }
 
 
 }
