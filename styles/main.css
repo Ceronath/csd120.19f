@@ -122,7 +122,7 @@ footer hr {
     background-image: url("../Images/paperclip.png");
     height: 50px;
     width: 50px;
-    background-size: contain; 
+    background-size: contain;
     position: absolute;
     right: -7px;
     top: -10px;
@@ -130,7 +130,7 @@ footer hr {
 
 .mugshot{
     float: right;
-    position: relative; 
+    position: relative;
     top: -1em;
 }
 
@@ -139,7 +139,7 @@ footer hr {
 }
 
 nav ul li{
-    
+
 }
 
 nav{
@@ -174,7 +174,7 @@ nav a:hover{
 }
 
 main{
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2em;
 }
@@ -264,8 +264,8 @@ img{
         top: 5px;}
     .burger::after{
         top: 15px;}
-    
-    
+
+
 }
 
 section table{
@@ -292,4 +292,30 @@ tr:nth-of-type(odd) td{
 
 tr:nth-of-type(2), tr:nth-of-type(7){
     border-top: 3px solid #4c7d72
+}
+
+.survey{
+    grid-column: span 2;
+}
+
+form{
+    display: grid;
+}
+
+label{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+#send{
+    margin-top:1em;
+    justify-self: end;
+    font-size: 24px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 3px solid rgba(0,0,0,0.5);
+    color: black;
+    background: rgb(62, 102, 211);
 }
