@@ -3,6 +3,7 @@
 <head>
     <title> Jordan Poulin's CSD120 Website </title>
     <meta charset='utf-8'>
+    <link rel='stylesheet' href='styles/baguetteBox.css'>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
@@ -12,6 +13,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script type='text/javascript' src='baguetteBox.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond%7CProza+Libre&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -19,8 +21,8 @@
     <div class="width-wrap">
             <header id="top">
                 <nav>
-                    <label for='burger-toggle' class=burger></label>
                     <input type='checkbox' id='burger-toggle'>
+                    <label for='burger-toggle' class=burger></label>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="links.html">Links</a></li>
@@ -185,7 +187,7 @@
 
                             <label for='bear'>Which bear is best?</label>
                             <select name="best_bear" id='bear'>
-                                <option value=""></option>
+                                <option value=""> </option>
                                 <option value="Black">Black</option>
                                 <option value="Brown">Brown</option>
                                 <option value="Care">Care</option>
@@ -221,5 +223,8 @@
             </footer>
         <div class="back-to-top"><a href="#top">◤</a></div>
     </div>
+    <script>baguetteBox.run('.gallery-thumbnails', {
+        filter: /picsum\.photos\/id/i
+        });</script>
 </body>
 </html>

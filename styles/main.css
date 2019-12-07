@@ -261,7 +261,10 @@ img{
         display:block;}
     .burger, .burger::before, .burger::after{
         width: 40px;
-        border-top: 5px solid #2832a6;}
+        border-top: 5px solid #2832a6;
+        transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+        }
+
     .burger::before, .burger::after{
         content: '';
         display: block;
@@ -274,11 +277,15 @@ img{
         display: none;}
     input:checked~ul{
         height: 126px;}
-    {
-        transform: translate(-5px, -10px) rotate(45deg);
+    #burger-toggle:checked~.burger{
+        transform: translate(-5px, 10px) rotate(45deg);
     }
-
-
+    #burger-toggle:checked~.burger::before{
+        opacity: 0;
+    }
+    #burger-toggle:checked~.burger::after{
+        transform: translate(0px, -20px) rotate(-90deg);
+    }
 }
 
 #burger-toggle{
